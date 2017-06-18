@@ -25,4 +25,5 @@ Haoyu Zhang: McGill University - Honors Mathematics & Computer Science U2
 
 Resources:
 Credits to UC Irvine Machine Learning Repository Archive for their datasets
-http://archive.ics.uci.edu/ml/datasets/vertebral+column
+URL: http://archive.ics.uci.edu/ml/datasets/vertebral+column
+Citation: Lichman, M. (2013). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
