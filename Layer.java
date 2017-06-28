@@ -1,28 +1,15 @@
 
 public class Layer {
-	
-	//Private Fields
-	private int numberOfNode;
-	private double[] nodesVector;
+
+	//Vectors as public fields (facilitate updates)
+	public int numberOfNodes;
+	public double[] nodesActivationVector; //Corresponds to activation values
+	public double[] nodesErrorVector; //Corresponds to lowercase delta values, note that this doesn't exist for L1 (inputs)
 	
 	//Constructor
-	public Layer(int numberOfNode){
-		this.numberOfNode = numberOfNode;
-		this.nodesVector = new double[this.numberOfNode];
+	public Layer(int numberOfNodes){
+		this.numberOfNodes = numberOfNodes;
+		this.nodesActivationVector = new double[numberOfNodes];
+		this.nodesErrorVector = new double [numberOfNodes];
 	}
-	
-	//Getters & Setters
-	public int getNumberOfNode() {
-		return numberOfNode;
-	}
-	public void setNumberOfNode(int numberOfNode) {
-		this.numberOfNode = numberOfNode;
-	}
-	public double[] getNodesVector() {
-		return nodesVector;
-	}
-	public void setNodesVector(double[] nodesVector) {
-		this.nodesVector = nodesVector;
-	}
-	
 }
